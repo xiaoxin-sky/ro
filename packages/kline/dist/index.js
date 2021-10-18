@@ -1,8 +1,9 @@
-(function (factory) {
-  typeof define === 'function' && define.amd ? define(factory) :
-  factory();
-})((function () { 'use strict';
+'use strict';
 
+Object.defineProperty(exports, '__esModule', { value: true });
 
+function main(p) {
+    console.log(p);
+}
 
-}));
+exports.main = main;

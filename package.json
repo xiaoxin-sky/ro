@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
-    "build:canvasx": "rollup -c --environment PACKAGE:canvasx",
     "build:kline": "rollup -c --environment PACKAGE:kline",
     "dev": "rollup -wc"
   },

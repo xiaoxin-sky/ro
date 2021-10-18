@@ -1,6 +1,5 @@
 import alias from "@rollup/plugin-alias";
-// import typescript from "@rollup/plugin-typescript";
-import ts from "rollup-plugin-typescript2";
+import typescript from "@rollup/plugin-typescript";
 import * as path from "path";
 import { defineConfig } from "rollup";
 // export default defineConfig([buildConfig(process.env.PACKAGE)]);
@@ -19,15 +18,11 @@ function pathResolve(url) {
 }
 
 function buildConfig(packageName) {
-  console.log(
-    "------,",
-    path.resolve(__dirname, `./packages/${packageName}/src`)
-  );
   return {
     input: pathResolve(`${packageName}/src/index.ts`),
     output: {
       file: pathResolve(`${packageName}/dist/index.js`),
-      format: "umd",
+      format: "cjs",
       // format: "esm",
       // sourcemap: true,
       // dir: pathResolve(`${packageName}/dist`),
@@ -44,7 +39,7 @@ function buildConfig(packageName) {
           },
         ],
       }),
-      ts({
+      typescript({
         tsconfig: path.resolve(
           __dirname,
           `./packages/${packageName}/tsconfig.json`

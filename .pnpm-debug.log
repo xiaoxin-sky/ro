@@ -1,0 +1,146 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 2,
+    "total": 2,
+    "workspacePrefix": "/Users/xiaoxin/workspace/study/ro"
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@ccr/kline",
+      "version": "1.0.0",
+      "description": "",
+      "main": "dist/index.js",
+      "scripts": {},
+      "author": "",
+      "license": "ISC",
+      "dependencies": {
+        "canvasx": "workspace:*"
+      },
+      "devDependencies": {
+        "typescript": "^4.4.3"
+      }
+    },
+    "prefix": "/Users/xiaoxin/workspace/study/ro/packages/kline"
+  },
+  "2 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "kline-chart-reactive",
+      "version": "1.0.0",
+      "description": "响应式k线库",
+      "main": "index.js",
+      "scripts": {
+        "build": "rollup -c",
+        "build:kline": "rollup -c --environment PACKAGE:kline",
+        "dev": "rollup -wc"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xiaoxin-sky/canvas-chart-reactive.git"
+      },
+      "keywords": [
+        "kline、reactive"
+      ],
+      "author": "xiaoxin",
+      "license": "ISC",
+      "bugs": {
+        "url": "https://github.com/xiaoxin-sky/canvas-chart-reactive/issues"
+      },
+      "homepage": "https://github.com/xiaoxin-sky/canvas-chart-reactive#readme",
+      "dependencies": {
+        "rollup": "^2.58.0",
+        "rollup-plugin-typescript2": "^0.30.0"
+      },
+      "devDependencies": {
+        "@rollup/plugin-alias": "^3.1.5",
+        "@rollup/plugin-typescript": "^8.2.5",
+        "@types/node": "^16.10.3",
+        "tslib": "^2.3.1",
+        "typescript": "^4.4.3"
+      }
+    },
+    "prefix": "/Users/xiaoxin/workspace/study/ro"
+  },
+  "3 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Users/xiaoxin/.pnpm-store/v3",
+    "virtualStoreDir": "/Users/xiaoxin/workspace/study/ro/node_modules/.pnpm"
+  },
+  "4 debug pnpm:stage": {
+    "prefix": "/Users/xiaoxin/workspace/study/ro",
+    "stage": "resolution_started"
+  },
+  "5 debug pnpm:_dependency_resolved": {
+    "resolution": "10.9.51.250+8081/typescript/4.4.3",
+    "wanted": {
+      "dependentId": "packages/kline",
+      "name": "typescript",
+      "rawSpec": "^4.4.3"
+    }
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "10.9.51.250+8081/@rollup/plugin-alias/3.1.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@rollup/plugin-alias",
+      "rawSpec": "^3.1.5"
+    }
+  },
+  "7 debug pnpm:_dependency_resolved": {
+    "resolution": "10.9.51.250+8081/@rollup/plugin-typescript/8.2.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@rollup/plugin-typescript",
+      "rawSpec": "^8.2.5"
+    }
+  },
+  "8 debug pnpm:_dependency_resolved": {
+    "resolution": "10.9.51.250+8081/@types/node/16.10.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/node",
+      "rawSpec": "^16.10.3"
+    }
+  },
+  "9 debug pnpm:_dependency_resolved": {
+    "resolution": "10.9.51.250+8081/tslib/2.3.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "tslib",
+      "rawSpec": "^2.3.1"
+    }
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "10.9.51.250+8081/typescript/4.4.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "typescript",
+      "rawSpec": "^4.4.3"
+    }
+  },
+  "11 debug pnpm:_dependency_resolved": {
+    "resolution": "10.9.51.250+8081/rollup/2.58.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "rollup",
+      "rawSpec": "^2.58.0"
+    }
+  },
+  "12 debug pnpm:_dependency_resolved": {
+    "resolution": "10.9.51.250+8081/rollup-plugin-typescript2/0.30.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "rollup-plugin-typescript2",
+      "rawSpec": "^0.30.0"
+    }
+  },
+  "13 error pnpm": {
+    "code": "ERR_PNPM_NO_MATCHING_VERSION_INSIDE_WORKSPACE",
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "In packages/kline: No matching version found for canvasx@* inside the workspace",
+      "code": "ERR_PNPM_NO_MATCHING_VERSION_INSIDE_WORKSPACE",
+      "stack": "pnpm: In packages/kline: No matching version found for canvasx@* inside the workspace\n    at tryResolveFromWorkspace (/Users/xiaoxin/.nvm/versions/node/v14.16.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.17.2/node_modules/pnpm/dist/pnpm.cjs:85337:15)\n    at resolveNpm (/Users/xiaoxin/.nvm/versions/node/v14.16.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.17.2/node_modules/pnpm/dist/pnpm.cjs:85239:39)\n    at Object.resolve (/Users/xiaoxin/.nvm/versions/node/v14.16.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.17.2/node_modules/pnpm/dist/pnpm.cjs:85451:40)\n    at ctx.requestsQueue.add.priority (/Users/xiaoxin/.nvm/versions/node/v14.16.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.17.2/node_modules/pnpm/dist/pnpm.cjs:71625:75)\n    at run (/Users/xiaoxin/.nvm/versions/node/v14.16.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.17.2/node_modules/pnpm/dist/pnpm.cjs:71372:90)\n    at PQueue._tryToStartAnother (/Users/xiaoxin/.nvm/versions/node/v14.16.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.17.2/node_modules/pnpm/dist/pnpm.cjs:71326:13)\n    at /Users/xiaoxin/.nvm/versions/node/v14.16.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.17.2/node_modules/pnpm/dist/pnpm.cjs:71385:16\n    at new Promise (<anonymous>)\n    at PQueue.add (/Users/xiaoxin/.nvm/versions/node/v14.16.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.17.2/node_modules/pnpm/dist/pnpm.cjs:71367:16)\n    at resolveAndFetch (/Users/xiaoxin/.nvm/versions/node/v14.16.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.17.2/node_modules/pnpm/dist/pnpm.cjs:71625:55)"
+    }
+  }
+}

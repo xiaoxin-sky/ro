@@ -6,9 +6,7 @@
   "scripts": {},
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "canvasx": "workspace:*"
-  },
+  "dependencies": {},
   "devDependencies": {
     "typescript": "^4.4.3"
   }

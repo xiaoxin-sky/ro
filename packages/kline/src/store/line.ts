@@ -1,1 +1,4 @@
-export const adj = "asds";
+export const enum KD {
+  "a",
+  "b",
+}
