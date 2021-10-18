@@ -1,0 +1,15 @@
+{
+  "include": ["src"],
+  "exclude": ["dist"],
+  "compilerOptions": {
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "outDir": "dist",
+    "declaration": true,
+    "declarationDir": ".",
+    "emitDeclarationOnly": true,
+    "target": "ES6",
+    "moduleResolution": "Node",
+    "isolatedModules": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@ccr/kline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvasx": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.3"
+  }
+}
